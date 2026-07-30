@@ -1,4 +1,6 @@
 # Porphyrogenitus_A_Byzantine_Text_RPG_Experience
+<img width="342" height="241" alt="scholae palatinae" src="https://github.com/user-attachments/assets/9b2d3ea4-3c94-4d51-958a-88d36dcea5c4" />
+
 
 In this project, our team, Scholae Palatinae, tries to create an authentic, medieval Roman
 TRPG experience, combining history of the peak of the Byzantine Empire (reign of Basil II)
