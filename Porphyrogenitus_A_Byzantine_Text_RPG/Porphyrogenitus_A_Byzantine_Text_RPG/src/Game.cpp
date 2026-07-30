@@ -16,7 +16,7 @@ bool Game::Init()
     }
 
     m_hConsoleIn = GetStdHandle(STD_INPUT_HANDLE);
-
+    m_pKeyboard = std::make_unique<Keyboard>();
     return true;
 }
 
@@ -60,12 +60,13 @@ void Game::ProcessEvents()
 
 void Game::ProcessInputs()
 {
-
+    if (m_pKeyboard->IsKeyJustPressed(KEY_ESCAPE))
+        m_bIsRunning = false;
 }
 
 void Game::Update()
 {
-
+    m_pKeyboard->Update();
 }
 
 void Game::Draw()
@@ -78,17 +79,16 @@ void Game::KeyEventProcess(KEY_EVENT_RECORD keyEvent)
 {
     if (keyEvent.bKeyDown)
     {
-        // TO DO : Keyboard clas goes here!
-        std::cout << "Key Pressed!" << keyEvent.wVirtualKeyCode << std::endl;
+        m_pKeyboard->OnKeyDown(keyEvent.wVirtualKeyCode);
     }
     else
     {
-        std::cout << "Key Released!" << keyEvent.wVirtualKeyCode << std::endl;
+        m_pKeyboard->OnKeyUp(keyEvent.wVirtualKeyCode);
     }
 }
 
 Game::Game()
-    :m_bIsRunning{true}
+    :m_bIsRunning{true} , m_pKeyboard{nullptr} , m_pConsole{nullptr}
 {
 
 }
@@ -105,8 +105,8 @@ void Game::Run()
 
     while (m_bIsRunning)
     {
-        ProcessInputs();
         ProcessEvents();
+        ProcessInputs();
         Update();
         Draw();
     }

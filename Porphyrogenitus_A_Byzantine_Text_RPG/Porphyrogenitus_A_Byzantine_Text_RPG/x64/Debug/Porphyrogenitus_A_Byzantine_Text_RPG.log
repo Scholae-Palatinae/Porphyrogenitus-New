@@ -1,9 +1,12 @@
 ﻿  Console.cpp
-C:\Users\Nikiforos\OneDrive - kassowrobots.com\Dokumenter\Spil Projekter\Porphyrogennitos RPG\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(7,16): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Nikiforos\OneDrive - kassowrobots.com\Dokumenter\Spil Projekter\Porphyrogennitos RPG\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(7,19): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Nikiforos\OneDrive - kassowrobots.com\Dokumenter\Spil Projekter\Porphyrogennitos RPG\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(90,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(7,16): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(7,19): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Console.cpp(90,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Game.cpp
-C:\Users\Nikiforos\OneDrive - kassowrobots.com\Dokumenter\Spil Projekter\Porphyrogennitos RPG\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Game.cpp(43,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Game.cpp(43,23): warning C4018: '<': signed/unsigned mismatch
+  Keyboard.cpp
+  Logger.cpp
   main.cpp
   Generating Code...
-  Porphyrogenitus_A_Byzantine_Text_RPG.vcxproj -> C:\Users\Nikiforos\OneDrive - kassowrobots.com\Dokumenter\Spil Projekter\Porphyrogennitos RPG\Porphyrogenitus_A_Byzantine_Text_RPG\x64\Debug\Porphyrogenitus_A_Byzantine_Text_RPG.exe
+  LINK : C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\x64\Debug\Porphyrogenitus_A_Byzantine_Text_RPG.exe not found or not built by the last incremental link; performing full link
+  Porphyrogenitus_A_Byzantine_Text_RPG.vcxproj -> C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\x64\Debug\Porphyrogenitus_A_Byzantine_Text_RPG.exe
