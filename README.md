@@ -1,5 +1,3 @@
-# Porphyrogenitus-New
-
 # Porphyrogenitus_A_Byzantine_Text_RPG_Experience
 
 In this project, our team, Scholae Palatinae, tries to create an authentic, medieval Roman
