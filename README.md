@@ -20,5 +20,22 @@ Console Class:
 2) Draw that text to a specific location in the console
 3) Color the text based on the 16 colors available for the windows console.
 
-Newest Update includes:
+28/07/2026 Update includes:
 Keyboard Input
+
+31/07/2026 Update:
+feat: implemented the core State Machine architecture
+
+- Added abstract IState interface
+- Implemented GameState
+- Added stack-based StateMachine using std::unique_ptr
+- Integrated state management into the game loop
+- Added state enter/exit lifecycle handling
+
+Sneak peek:
+<img width="917" height="913" alt="image" src="https://github.com/user-attachments/assets/d22affbf-9310-470a-ba1f-598b1be2737d" />
+
+Then, once you hit exit:
+<img width="935" height="597" alt="image" src="https://github.com/user-attachments/assets/d0dd730a-fcb6-48a0-ae8b-80fa28c82774" />
+
+
