@@ -16,6 +16,7 @@ public:
 
 	void PushState(StatePtr newState);
 	StatePtr PopState();
+	const bool Empty() const { return m_States.empty(); }
 
 	StatePtr& GetCurrentState();
 

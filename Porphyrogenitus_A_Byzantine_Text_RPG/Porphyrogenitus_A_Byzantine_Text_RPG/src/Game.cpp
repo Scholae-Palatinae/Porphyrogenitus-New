@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "Logger.h"
 #include <iostream>
+#include "states/GameState.h"
 
 bool Game::Init()
 {
@@ -17,6 +18,10 @@ bool Game::Init()
 
     m_hConsoleIn = GetStdHandle(STD_INPUT_HANDLE);
     m_pKeyboard = std::make_unique<Keyboard>();
+    m_pStateMachine = std::make_unique<StateMachine>();
+
+    m_pStateMachine->PushState(std::make_unique<GameState>(*m_pKeyboard, *m_pStateMachine));
+
     return true;
 }
 
@@ -62,16 +67,45 @@ void Game::ProcessInputs()
 {
     if (m_pKeyboard->IsKeyJustPressed(KEY_ESCAPE))
         m_bIsRunning = false;
+
+    if (m_pStateMachine->Empty())
+    {
+        TRPG_ERROR("NO STATES IN STATE MACHINE TO PROCESS INPUTS!");
+        m_bIsRunning = false;
+        return;
+    }
+
+    m_pStateMachine->GetCurrentState()->ProcessInputs();
+
 }
 
 void Game::Update()
 {
+    if (m_pStateMachine->Empty())
+    {
+        TRPG_ERROR("NO STATES IN STATE MACHINE TO UPDATE!");
+        m_bIsRunning = false;
+        return;
+    }
+
+    m_pStateMachine->GetCurrentState()->Update();
     m_pKeyboard->Update();
 }
 
 void Game::Draw()
 {
     m_pConsole->Write(10, 10, L"Hello World!", RED);
+
+    if (m_pStateMachine->Empty())
+    {
+        TRPG_ERROR("NO STATES IN STATE MACHINE TO DRAW!");
+        m_bIsRunning = false;
+        return;
+    }
+
+    m_pStateMachine->GetCurrentState()->Draw();
+
+
     m_pConsole->Draw();
 }
 
@@ -88,7 +122,7 @@ void Game::KeyEventProcess(KEY_EVENT_RECORD keyEvent)
 }
 
 Game::Game()
-    :m_bIsRunning{true} , m_pKeyboard{nullptr} , m_pConsole{nullptr}
+    :m_bIsRunning{true} , m_pKeyboard{nullptr} , m_pConsole{nullptr} , m_pStateMachine{nullptr}
 {
 
 }
