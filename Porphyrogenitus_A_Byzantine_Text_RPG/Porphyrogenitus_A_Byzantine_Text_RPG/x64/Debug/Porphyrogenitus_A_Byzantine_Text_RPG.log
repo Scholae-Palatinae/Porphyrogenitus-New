@@ -1,3 +1,35 @@
 ﻿  Game.cpp
 C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Game.cpp(48,23): warning C4018: '<': signed/unsigned mismatch
+  GameState.cpp
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(189,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'src/states/GameState.cpp')
+      C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(189,14):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\states\GameState.h(16,13):
+          see reference to class template instantiation 'Selector<std::wstring>' being compiled
+          C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(178,1):
+          while compiling class template member function 'void Selector<std::wstring>::Draw(void)'
+              C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\states\GameState.cpp(38,17):
+              see the first reference to 'Selector<std::wstring>::Draw' in 'GameState::Draw'
+  
+C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(95,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'src/states/GameState.cpp')
+      C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(95,20):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(78,2):
+          while compiling class template member function 'Selector<std::wstring>::Selector(Console &,Keyboard &,std::vector<T,std::allocator<T>>,SelectorParams)'
+          with
+          [
+              T=std::wstring
+          ]
+              C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\states\GameState.cpp(11,12):
+              see the first reference to 'Selector<std::wstring>::Selector' in 'GameState::GameState'
+          C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\Porphyrogenitus_A_Byzantine_Text_RPG\src\Selector.h(92,2):
+          while compiling class template member function 'Selector<std::wstring>::Selector(Console &,Keyboard &,std::function<void (int,std::vector<T,std::allocator<T>>)>,std::function<void (int,int,T)>,std::vector<T,std::allocator<T>>,SelectorParams)'
+          with
+          [
+              T=std::wstring
+          ]
+  
+  Generating Code...
   Porphyrogenitus_A_Byzantine_Text_RPG.vcxproj -> C:\Users\Nikiforos\source\repos\Porphyrogenitus-New\Porphyrogenitus_A_Byzantine_Text_RPG\x64\Debug\Porphyrogenitus_A_Byzantine_Text_RPG.exe
